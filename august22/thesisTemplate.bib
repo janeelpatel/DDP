@@ -1,0 +1,133 @@
+@inproceedings{sniper,
+    author = {Carlson, Trevor E. and Heirman, Wim and Eeckhout, Lieven},
+    title = {Sniper: Exploring the Level of Abstraction for Scalable and Accurate Parallel Multi-Core Simulation},
+    year = {2011},
+    isbn = {9781450307710},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2063384.2063454},
+    doi = {10.1145/2063384.2063454},
+    abstract = {Two major trends in high-performance computing, namely, larger numbers of cores and the growing size of on-chip cache memory, are creating significant challenges for evaluating the design space of future processor architectures. Fast and scalable simulations are therefore needed to allow for sufficient exploration of large multi-core systems within a limited simulation time budget. By bringing together accurate high-abstraction analytical models with fast parallel simulation, architects can trade off accuracy with simulation speed to allow for longer application runs, covering a larger portion of the hardware design space. Interval simulation provides this balance between detailed cycle-accurate simulation and one-IPC simulation, allowing long-running simulations to be modeled much faster than with detailed cycle-accurate simulation, while still providing the detail necessary to observe core-uncore interactions across the entire system. Validations against real hardware show average absolute errors within 25% for a variety of multi-threaded workloads; more than twice as accurate on average as one-IPC simulation. Further, we demonstrate scalable simulation speed of up to 2.0 MIPS when simulating a 16-core system on an 8-core SMP machine.},
+    booktitle = {Proceedings of 2011 International Conference for High Performance Computing, Networking, Storage and Analysis},
+    articleno = {52},
+    numpages = {12},
+    keywords = {multi-core processor, performance modeling, interval model, interval simulation},
+    location = {Seattle, Washington},
+    series = {SC '11}
+}
+
+@inproceedings{10.1145/2749469.2750407,
+    author = {Carlson, Trevor E. and Heirman, Wim and Allam, Osman and Kaxiras, Stefanos and Eeckhout, Lieven},
+    title = {The Load Slice Core Microarchitecture},
+    year = {2015},
+    isbn = {9781450334020},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/2749469.2750407},
+    doi = {10.1145/2749469.2750407},
+    abstract = {Driven by the motivation to expose instruction-level parallelism (ILP), microprocessor cores have evolved from simple, in-order pipelines into complex, superscalar out-of-order designs. By extracting ILP, these processors also enable parallel cache and memory operations as a useful side-effect. Today, however, the growing off-chip memory wall and complex cache hierarchies of many-core processors make cache and memory accesses ever more costly. This increases the importance of extracting memory hierarchy parallelism (MHP), while reducing the net impact of more general, yet complex and power-hungry ILP-extraction techniques. In addition, for multi-core processors operating in power- and energy-constrained environments, energy-efficiency has largely replaced single-thread performance as the primary concern.Based on this observation, we propose a core microarchitecture that is aimed squarely at generating parallel accesses to the memory hierarchy while maximizing energy efficiency. The Load Slice Core extends the efficient in-order, stall-on-use core with a second in-order pipeline that enables memory accesses and address-generating instructions to bypass stalled instructions in the main pipeline. Backward program slices containing address-generating instructions leading up to loads and stores are extracted automatically by the hardware, using a novel iterative algorithm that requires no software support or recompilation. On average, the Load Slice Core improves performance over a baseline in-order processor by 53% with overheads of only 15% in area and 22% in power, leading to an increase in energy efficiency (MIPS/Watt) over in-order and out-of-order designs by 43% and over 4.7\texttimes{}, respectively. In addition, for a power- and area-constrained many-core design, the Load Slice Core outperforms both in-order and out-of-order designs, achieving a 53% and 95% higher performance, respectively, thus providing an alternative direction for future many-core processors.},
+    booktitle = {Proceedings of the 42nd Annual International Symposium on Computer Architecture},
+    pages = {272–284},
+    numpages = {13},
+    location = {Portland, Oregon},
+    series = {ISCA '15}
+}
+
+@article{loadslice,
+    author = {Carlson, Trevor E. and Heirman, Wim and Allam, Osman and Kaxiras, Stefanos and Eeckhout, Lieven},
+    title = {The Load Slice Core Microarchitecture},
+    year = {2015},
+    issue_date = {June 2015},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {43},
+    number = {3S},
+    issn = {0163-5964},
+    url = {https://doi.org/10.1145/2872887.2750407},
+    doi = {10.1145/2872887.2750407},
+    abstract = {Driven by the motivation to expose instruction-level parallelism (ILP), microprocessor cores have evolved from simple, in-order pipelines into complex, superscalar out-of-order designs. By extracting ILP, these processors also enable parallel cache and memory operations as a useful side-effect. Today, however, the growing off-chip memory wall and complex cache hierarchies of many-core processors make cache and memory accesses ever more costly. This increases the importance of extracting memory hierarchy parallelism (MHP), while reducing the net impact of more general, yet complex and power-hungry ILP-extraction techniques. In addition, for multi-core processors operating in power- and energy-constrained environments, energy-efficiency has largely replaced single-thread performance as the primary concern.Based on this observation, we propose a core microarchitecture that is aimed squarely at generating parallel accesses to the memory hierarchy while maximizing energy efficiency. The Load Slice Core extends the efficient in-order, stall-on-use core with a second in-order pipeline that enables memory accesses and address-generating instructions to bypass stalled instructions in the main pipeline. Backward program slices containing address-generating instructions leading up to loads and stores are extracted automatically by the hardware, using a novel iterative algorithm that requires no software support or recompilation. On average, the Load Slice Core improves performance over a baseline in-order processor by 53% with overheads of only 15% in area and 22% in power, leading to an increase in energy efficiency (MIPS/Watt) over in-order and out-of-order designs by 43% and over 4.7\texttimes{}, respectively. In addition, for a power- and area-constrained many-core design, the Load Slice Core outperforms both in-order and out-of-order designs, achieving a 53% and 95% higher performance, respectively, thus providing an alternative direction for future many-core processors.},
+    journal = {SIGARCH Comput. Archit. News},
+    month = {jun},
+    pages = {272–284},
+    numpages = {13}
+}
+
+@inproceedings{forwardslice,
+    author = {Lakshminarasimhan, Kartik and Naithani, Ajeya and Feliu, Josu\'{e} and Eeckhout, Lieven},
+    title = {The Forward Slice Core Microarchitecture},
+    year = {2020},
+    isbn = {9781450380751},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3410463.3414629},
+    doi = {10.1145/3410463.3414629},
+    abstract = {Superscalar out-of-order cores deliver high performance at the cost of increased complexity and power budget. In-order cores, in contrast, are less complex and have a smaller power budget, but offer low performance. A processor architecture should ideally provide high performance in a power- and cost-efficient manner. Recently proposed slice-out-of-order (sOoO) cores identify backward slices of memory operations which they execute out-of-order with respect to the rest of the dynamic instruction stream for increased instruction-level and memory-hierarchy parallelism. Unfortunately, constructing backward slices is imprecise and hardware-inefficient, leaving performance on the table.In this paper, we propose Forward Slice Core (FSC), a novel core microarchitecture that builds on a stall-on-use in-order core and extracts more instruction-level and memory-hierarchy parallelism than slice-out-of-order cores. FSC does so by identifying and steering forward slices (rather than backward slices) to dedicated in-order FIFO queues. Moreover, FSC puts load-consumers that depend on L1 D-cache misses on the side to enable younger independent load-consumers to execute faster. Finally, FSC eliminates the need for dynamic memory disambiguation by replicating store-address instructions across queues. FSC improves performance by 9.7% on average compared to Freeway, the state-of-the-art sOoO core, across the SPEC CPU2017 benchmarks, while incurring reduced hardware complexity and a similar power budget.},
+    booktitle = {Proceedings of the ACM International Conference on Parallel Architectures and Compilation Techniques},
+    pages = {361–372},
+    numpages = {12},
+    keywords = {mobile computing, superscalar architecture, slice out of order cores, complexity effective architecture},
+    location = {Virtual Event, GA, USA},
+    series = {PACT '20}
+}
+
+@INPROCEEDINGS{freeflow,  
+    author={Choudhary, Raj Kumar and Singh, Newton and Nair, Harideep and Rawat, Rishabh and Singh, Virendra},  
+    booktitle={2019 IEEE 37th International Conference on Computer Design (ICCD)},   
+    title={Freeflow Core: Enhancing Performance of In-Order Cores with Energy Efficiency},   
+    year={2019},  
+    volume={},  
+    number={},  
+    pages={702-705},  
+    doi={10.1109/ICCD46524.2019.00103}
+}
+
+@INPROCEEDINGS{freeway,  
+    author={Kumar, Rakesh and Alipour, Mehdi and Black-Schaffer, David},  
+    booktitle={2019 IEEE International Symposium on High Performance Computer Architecture (HPCA)},   
+    title={Freeway: Maximizing MLP for Slice-Out-of-Order Execution},   
+    year={2019},  
+    volume={},  
+    number={},  
+    pages={558-569},  
+    doi={10.1109/HPCA.2019.00009}
+}
+
+@inproceedings{fxa,
+    author = {Shioya, Ryota and Goshima, Masahiro and Ando, Hideki},
+    title = {A Front-End Execution Architecture for High Energy Efficiency},
+    year = {2014},
+    isbn = {9781479969982},
+    publisher = {IEEE Computer Society},
+    address = {USA},
+    url = {https://doi.org/10.1109/MICRO.2014.35},
+    doi = {10.1109/MICRO.2014.35},
+    abstract = {Smart phones and tablets have recently become widespread and dominant in the computer market. Users require that these mobile devices provide a high-quality experience and an even higher performance. Hence, major developers adopt out-of-order superscalar processors as application processors. However, these processors consume much more energy than in-order superscalar processors, because a large amount of energy is consumed by the hardware for dynamic instruction scheduling. We propose a Front-end Execution Architecture (FXA). FXA has two execution units: an out-of-order execution unit (OXU) and an in-order execution unit (IXU). The OXU is the execution core of a common out-of-order superscalar processor. In contrast, the IXU comprises functional units and a bypass network only. The IXU is placed at the processor front end and executes instructions without scheduling. Fetched instructions are first fed to the IXU, and the instructions that are already ready or become ready to execute by the resolution of their dependencies through operand bypassing in the IXU are executed in-order. Not ready instructions go through the IXU as a NOP, thereby, its pipeline is not stalled, and instructions keep flowing. The not-ready instructions are then dispatched to the OXU, and are executed out-of-order. The IXU does not include dynamic scheduling logic, and its energy consumption is consequently small. Evaluation results show that FXA can execute over 50% of instructions using IXU, thereby making it possible to shrink the energy-consuming OXU without incurring performance degradation. As a result, FXA achieves both a high performance and low energy consumption. We evaluated FXA compared with conventional out-of-order/in-order superscalar processors after ARM big. LITTLE architecture. The results show that FXA achieves performance improvements of 67% at the maximum and 7.4% on geometric mean in SPECCPU INT 2006 benchmark suite relative to a conventional superscalar processor (big), while reducing the energy consumption by 86% at the issue queue and 17% in the whole processor. The performance/energy ratio (the inverse of the energy-delay product) of FXA is 25% higher than that of a conventional superscalar processor (big) and 27% higher than that of a conventional in-order superscalar processor (LITTLE).},
+    booktitle = {Proceedings of the 47th Annual IEEE/ACM International Symposium on Microarchitecture},
+    pages = {419–431},
+    numpages = {13},
+    keywords = {Energy Efficiency, Core Microarchitecture, Hybrid In-Order/Out-of-Order Core},
+    location = {Cambridge, United Kingdom},
+    series = {MICRO-47}
+}
+
+@INPROCEEDINGS{remo,  
+    author={Gopalakrishnan, Shoba and Singh, Virendra},  
+    booktitle={2016 IEEE 22nd International Symposium on On-Line Testing and Robust System Design (IOLTS)},   
+    title={REMO: Redundant execution with minimum area, power, performance overhead fault tolerant architecture},   
+    year={2016},  
+    volume={},  
+    number={},  
+    pages={109-114},  
+    doi={10.1109/IOLTS.2016.7604681}
+}
+
+@INPROCEEDINGS{remora,  
+    author={Gopalakrishnan, Shoba and Singh, Virendra},  
+    booktitle={2017 IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFT)},   
+    title={REMORA: A hybrid low-cost soft-error reliable fault tolerant architecture},   
+    year={2017},  
+    volume={},  
+    number={},  
+    pages={1-6},  
+    doi={10.1109/DFT.2017.8244454}
+}
